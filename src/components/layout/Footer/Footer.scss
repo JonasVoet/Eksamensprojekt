@@ -1,0 +1,97 @@
+footer {
+    text-align: center;
+    background-color: #333333;
+    color: #898989;
+    
+
+    .box1 {
+        position: relative;
+       .icon-box {
+        position: absolute;
+        left: 48.8%;
+        top: -12%;
+
+        .icon {
+            background: #f4f4f4;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            vertical-align: middle;
+            padding: 5px;
+            color: #424242;
+            cursor: pointer;
+        }
+       }
+        h6 {
+            font-family: lobster;
+            color: white;
+            padding: 10px;
+            font-size: 3em;
+            padding-top: 30px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .box2 {
+        color: #898989;
+        background-color: #252525;
+        width: 100% !important;
+        font-size: 1em;
+        padding: 15px;
+    }
+}
+
+/*Responsive Styles*/
+
+/* Smartphones (portrait) ---------------- */
+@media only screen 
+and (max-width : 320px)
+{
+
+}
+
+/* Smartphones (landscape) ---------------- */
+@media only screen 
+and (min-width : 321px)
+and (max-width : 767px)
+{
+
+}
+
+/* Tablets (portrait) -------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+{
+
+}
+
+
+/* Tablets (landscape) ------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+{   
+
+}
+
+/* Old Desktops and laptops ------------------ */
+@media only screen 
+and (min-width : 1025px) 
+{
+
+}
+
+/* Desktops ------------------ */
+@media only screen 
+and (min-width : 1201px) 
+{
+
+}

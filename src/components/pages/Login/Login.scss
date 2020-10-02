@@ -1,0 +1,162 @@
+main.main {
+    .container {
+        .section-form {
+            background: linear-gradient(rgba(61, 61, 61, 0.342), rgba(47, 47, 47, 0.356)),
+            url('../../../images/slide1.jpg');
+                background-size: cover;
+                background-position: center;
+                min-height: 55vh;
+                margin-bottom: 8rem;
+                padding-top: 2rem;
+            h1 {
+                color: white;
+                font-size: 5em;
+                font-family: lobster;
+                padding-top: 4rem;
+                padding-bottom: 1rem;
+                display: block;
+            }
+            form.form {
+                
+                input {
+                    width: 320px;
+                    height: 35px;
+                    margin: 8px;
+                    
+                    border: none;
+                    
+
+                    &:focus {
+                        outline: none;
+                    }
+                    
+                }
+
+                button.login-btn {
+                    width: 320px;
+                    height: 35px;
+                    border: none;
+                    color: white;
+                    background-color: #617685;
+                    font-family: semi;
+                    transition: all .2s ease-in-out;
+                    
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                input[type=email] {
+                    padding-left: 10px;
+                 }
+                 input[type=password] {
+                    padding-left: 10px;
+                 }
+            }
+            .modal-container {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    background-color: rgba(0, 0, 0, 0) !important;
+                    border: none;
+                    color: white;
+                    padding: 0 !important;
+                    margin: 12px;
+                    font-family: semi;
+                    font-size: 0.8em;
+                                    
+                }
+                p {
+                    color: white;
+                    font-family: semi;
+                    margin: 12px;
+                    margin-left: 125px;
+                    font-size: 0.8em;
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.modal-header {
+    font-family: lobster;
+    background-color: #617685;
+    
+    .modal-title {
+      font-size: 3em;
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    
+}
+
+form.register-form {
+    text-align: center;
+    input {
+        height: 35px;
+        border: none;
+        margin: 15px 5px auto;
+        box-shadow: 1px -1px 14px -4px rgba(0,0,0,0.13);
+        &:focus {
+            outline: none;
+        }
+        
+        
+    }
+
+    button {
+        margin-top: 1rem;
+        width: 130px;
+        height: 35px;
+        border: none;
+        background-color: #617685;
+        color: white;
+    }
+}
+
+
+
+/*Responsive Styles*/
+
+/* Smartphones (portrait) ---------------- */
+@media only screen 
+and (min-width : 320px)
+and (max-device-width : 480px)
+{
+   main.main {
+       .container {
+           .section-form {
+               
+                form.form {
+                    input {
+                
+                    width: 200px;
+                    height: 30px;
+                    }
+
+                    button.login-btn {
+                        width: 200px;
+                        height: 30px;
+                    }
+                }
+
+                
+           }
+
+          
+       }
+   }
+
+   
+}
+
+
+
+
+
+
+
+

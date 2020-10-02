@@ -1,0 +1,85 @@
+main {
+    section.profile-page {
+ 
+
+    h2 {
+        text-align: center;
+        font-family: lobster;
+        color: #324049;
+        font-size: 2.3em;
+    }
+
+    p { 
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-family: light;
+        color: #979797;
+    }
+
+    span {
+        font-family: semi;
+        color: black;
+    }
+
+    h4 {
+        color: rgb(148, 148, 148);
+        margin-top: 1rem;
+    }
+
+    .modal-container {
+        button {
+            background-color: #617685;
+            border: none;
+            border-radius: 0px;
+            margin-top: 1rem;
+        }
+
+        #delete {
+            width: 147px;
+            color: white;
+            height: 36px;
+            margin-bottom: 5rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+}
+    
+}
+
+button.button-logout {
+    background-color: #617685;
+    border: none;
+    color: white;
+    width: 146.34px;
+    height: 36px;
+    margin-top: 2rem;
+    font-weight: semi;
+}
+
+
+/*Responsive Styles*/
+
+/* Smartphones (portrait) ---------------- */
+@media only screen 
+and (min-width : 320px)
+and (max-device-width : 480px)
+{
+    
+}
+
+
+/* Tablets (portrait) -------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+{
+    
+}
+
+

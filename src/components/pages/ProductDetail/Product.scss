@@ -1,0 +1,324 @@
+$shadow-box: 0px 0px 3px 0.5px rgba(0,0,0,0.42); 
+
+main.main {
+ 
+margin-top: 4rem;
+   .product-shower {
+       background-color: white;
+       height: 44px;
+       color: #a0a0a0; 
+       
+       p {
+           line-height: 44px;
+           padding-left: 1rem;
+           font-family: light;
+           color: #707070;
+       }
+
+       span {
+           color: #dbd9d9 !important;
+       }
+   }
+
+   section.detail {
+       margin-top: 3rem;
+       display: flex;
+        h1, h2 {
+            font-family: semi;
+            font-size: 2em;
+        }
+        h2 {
+            color: #a0a0a0;
+            font-size: 1.9rem;
+        }
+       .img-text-container {
+        margin-top: 2rem;
+        margin-right: 5rem;
+        font-family: light;
+        font-size: 0.9em;
+
+        p {
+            padding-right: 10px;
+        }
+        img {
+            float: left;
+            padding-right: 1rem;
+        }
+       
+        }
+
+       .box2 {
+            
+            .like {
+                width: 202px;
+                height: 43px;
+                font-family: regular;
+                font-weight: 700;
+                border: 1px solid #617685;
+                background-color: white;
+               letter-spacing: 2px; 
+               margin-left: 161px;
+
+               span {
+                   margin-left: 8px;
+               }
+        
+                .icon {
+                    margin-left: 8px;
+                    color: #ffaaaa;
+                    margin-bottom: 5px;   
+                }
+            }
+            h3 {
+                font-family: semi;
+                font-size: 1.5em;
+                margin-top: 2rem;
+            }
+            .recipe {
+                margin-top: 1.5rem;
+                text-align: center;
+
+                .recipe-box {
+                    background-color: white;
+                    box-shadow: $shadow-box;
+                    padding: 12px;
+                    width: 364px;
+                    height: 50px;
+                    margin-bottom: 10px;
+                }
+            }
+       }
+   }
+
+   section.comments {
+       margin-top: 5rem;
+       margin-bottom: 8rem;
+       .comment-title {
+           display: flex;
+           justify-content: space-between;
+           background-color: white;
+           height: 64px;
+           h4 {
+               font-family: semi;
+               font-size: 1.4em;
+               line-height: 64px;
+               margin-left: 1.5rem;
+           }
+
+           p {
+               line-height: 64px;
+           }
+
+           .icon {
+            color: #c0c0c0;
+            margin-right: 10px;
+           margin-left: 4px;
+            
+           }
+       }
+
+       form.form {
+           display: flex;
+           position: relative;
+           input {
+              height: 64px;
+              width: 100%;     
+           }
+
+           input[type=text] {
+            width: 100%;
+            padding-left: 50px;
+            box-sizing: border-box;
+         }
+           .icon {
+               background-color: white;
+               width: 20px;
+               height: 20px;
+               position: absolute;
+                top: 23px;
+                left: 18px;
+               color: #323232;
+           }
+
+           button.button {
+               width: 172px;
+               height: 64px;
+               border: none;
+               color: white;
+               background-color: #617685;
+               font-family: regular;
+           }
+       }
+
+       .comment-boxes {
+           margin-top: 1rem;
+           .box {
+               background-color: white;
+               width: 100%;
+               height: 185px;
+               margin-bottom: 1rem;
+               box-shadow: $shadow-box;
+               padding: 30px;
+
+                h5 {
+                    font-family: semi;
+                }
+
+                p {
+                    font-family: light;
+                    color: #a6a6a6;
+                }
+           }
+       }
+   }
+
+   .page-link {
+       color: #c4c4c4 !important;
+
+       &:focus {
+           color: black !important;
+           
+       }
+
+   }
+
+   /*Responsive Styles*/
+
+    /* Smartphones (portrait) ---------------- */
+    @media only screen 
+    and (min-width : 320px)
+    and (max-device-width : 480px)
+    {
+        section.detail {
+            display: block;
+
+            .img-text-container {
+                margin-top: 20px;
+
+                p {
+                    margin: 0;
+                    padding: 2px;
+                    width: 20rem;
+                    font-size: 1.3em;
+                }
+
+                img {
+                    margin-bottom: 1rem;
+                    width: 20rem;
+                }
+
+               
+            }
+
+            .box2 {
+                .like {
+                    margin: 0;
+                    margin-left: 3rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            .recipe-box {
+                width: 100% !important;
+            }
+
+            
+        }
+        section.comments {
+            margin-top: 3rem;
+
+            .comment-title {
+                margin-bottom: 1rem;
+            }
+
+            form.form {
+                input {
+                    width: 100% !important;
+                    height: 30px;
+                }
+
+                button.button {
+                    height: 30px;
+                }
+
+                input[type=text] {
+                    padding-left: 0px;
+                 }
+
+                 .icon {
+                     display: none;
+                 }
+            }
+        }
+    } 
+
+
+
+/* Tablets (portrait) -------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+    {
+        section.detail {
+            display: block;
+
+            .img-text-container {
+                margin-top: 20px;
+
+                p {
+                    margin: 0;
+                    padding: 2px;
+                    width: 40rem;
+                    font-size: 1.3em;
+                }
+
+                img {
+                    margin-bottom: 1rem;
+                    width: 20rem;
+                }
+            }
+
+            .box2 {
+                .like {
+                    margin: 0;
+                    margin-left: 15rem;
+                    margin-top: 2rem;
+                }
+            }
+
+            .recipe-box {
+                width: 100% !important;
+            }
+
+            
+        }
+        section.comments {
+            margin-top: 3rem;
+
+            .comment-title {
+                margin-bottom: 1rem;
+            }
+
+            form.form {
+                input {
+                    width: 100% !important;
+                    height: 40px;
+                }
+
+                button.button {
+                    height: 40px;
+                }
+
+                input[type=text] {
+                    padding-left: 0px;
+                 }
+
+                 .icon {
+                     display: none;
+                 }
+            }
+        } 
+    }
+}
+

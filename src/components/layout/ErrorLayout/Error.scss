@@ -1,0 +1,57 @@
+main.main {
+        section.error-site {
+            text-align: center;
+            margin-bottom: 7.22rem;
+            margin-top: 6rem;
+
+            h2 {
+                font-family: lobster;
+                color: #324049;
+                font-size: 11em;
+                margin-bottom: 2rem;
+                
+            }
+
+         
+                p {
+                    margin-top: 1rem;
+                    font-size: 2em;
+                    font-family: light;
+                    color: #979797;
+                }
+
+                .bounce {
+                    
+                    animation: bounce 0.75s infinite;
+                    a {
+                        background-color: #617685;
+                        color: white;
+                        font-family: semi;
+                        display: inline-block;
+                        width: 200px;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-top: 3rem;
+                    }
+                }
+
+        }
+}
+
+@keyframes bounce {
+    0% {
+transform: scale(1,1) translate(0px, 0px);
+}
+
+30%{
+transform: scale(1,0.8) translate(0px, 10px); 
+}
+
+75%{
+transform: scale(1,1.1) translate(0px, -25px); 
+}
+
+100% {
+transform: scale(1,1) translate(0px, 0px);
+}
+}

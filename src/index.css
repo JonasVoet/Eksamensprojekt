@@ -1,0 +1,96 @@
+@font-face {
+    src: url(./fonts/Lobster.otf);
+    font-family: lobster;
+}
+
+@font-face {
+    src: url(./fonts/OpenSans-Light.ttf);
+    font-family: light;
+}
+
+@font-face {
+    src: url(./fonts/OpenSans-Regular.ttf);
+    font-family: regular;
+}
+
+@font-face {
+    src: url(./fonts/OpenSans-Semibold.ttf);
+    font-family: semi;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+/* Bootstrap overwrite */
+
+div.container-fluid {
+    padding: 0 !important;
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .carousel-indicators .active {
+    background-color: #817871 !important;
+}
+
+.slider-text {
+    position: absolute;
+    bottom: 45%;
+    text-align: center;
+    width: 100%;
+    font-family: lobster;
+    color: white;
+    font-size: 4.5vw;
+}
+
+#carouselExampleIndicators {
+    width:100%;
+    top:0;
+    position: absolute;
+}
+
+.spinner {
+    text-align: center;
+    margin-top: -5rem;
+    margin-left: 140px;
+}
+
+.spinner-border {
+    width: 150px;
+    height: 150px;
+}
+
+#heading-error {
+    margin-bottom: 3rem;
+    font-family: semi;
+}
+

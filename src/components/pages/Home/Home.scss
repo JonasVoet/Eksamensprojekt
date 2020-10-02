@@ -1,0 +1,287 @@
+main {
+    section.articles-section {
+    margin-top: 50rem;
+    text-align: center;
+
+    h2 {
+        font-family: lobster;
+        color: #324049;
+        font-size: 2.3em;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-family: light;
+        color: #979797;
+    }
+    
+    article.articles {
+      margin-top: 8rem;  
+        .boxes {
+            display: grid;
+            grid-gap: 10rem;
+            grid-template-areas: 
+            "box1 box2 box3";
+
+            .box {
+                img {
+                    border-radius: 100%;
+                }
+
+                h3 {
+                    margin-top: 3rem;
+                    font-family: semi;
+                    font-size: 1.4em;
+                    color: #303030;
+                }
+
+                p {
+                    margin-top: 2rem;
+                    font-family: light;
+                    color: #979797;
+                }
+            }
+        }  
+    }
+
+}
+    section.newsletter {
+       background-image: url(../../../images/newsletterbg.jpg);
+       height: 540px;
+       width: 100%;
+       margin-top: 12rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+       div.text-box {
+        color: white;
+
+        h4 {
+            font-family: lobster;
+            font-size: 2.1em;
+        }
+        p {
+            font-family: light;
+            color: white;
+        }
+        margin-bottom: 2rem;
+
+       }
+
+       form.form {
+           display: flex;
+           margin-bottom: 2rem;
+           .icon {
+               height: 54px;
+               width: 53px;
+               background-color: #bbc8d4;
+               text-align: center;
+               line-height: 50px;
+                vertical-align: bottom;
+
+               .mail {
+                display:inline-block;
+                width: 25px;
+                height: 25px;
+                color: white;
+                color: white;
+               }
+
+               &:hover .icon-unlock, .icon-lock {
+                    display: none; 
+            }
+
+                &:hover {
+                .icon-lock {
+                    display: inline;
+                }
+            }
+               
+           }
+           input {
+               height: 54px;
+               width: 1023px;
+               border: none;
+
+               &::placeholder {
+                   color: #a5b4c0;
+                   padding-left: 0.1rem;
+               }
+
+               &:focus {
+                outline: none;
+               }
+           }
+
+           button.button {
+               width: 176px;
+               height: 54px;
+               border: none;
+               outline: none;
+               background-color: #617685;
+               color: white;
+           }
+          
+       }
+    }
+
+    section.products {
+        text-align: center;
+        margin-top: 6rem;
+        h2 {
+            font-family: lobster;
+            color: #324049;
+            font-size: 2.1em;
+        }
+    
+        p.info {
+            margin-top: 2rem;
+            font-family: light;
+            color: #979797;
+        }
+
+        .products {
+            margin-top: 7rem;
+            display: grid;
+            grid-gap: 2rem;
+            grid-row-gap: 5rem;
+            grid-template-areas: 
+            "box1 box2 box3 box4";
+
+            .box {
+                .comments {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .icon {
+                        color: #c0c0c0;
+                        display: inline-block !important;
+                        margin-bottom: 1rem;
+                        margin-left: 5px;
+                    }
+
+                    p {
+                        font-family: light;
+                        color: #979797;
+                    }
+                }
+
+                h5 {
+                    font-family: semi;
+                    margin-bottom: 1.2rem;
+                }
+
+                p {
+                    font-family: light;
+                    font-size: 0.9em;
+                }
+
+                button.read-more {
+                    width: 202px;
+                    height: 43px;
+                    border: 1px solid #617685;
+                    background-color: white;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        margin-bottom: 12rem;
+    }
+}
+
+
+/*Responsive Styles*/
+
+/* Smartphones (portrait) ---------------- */
+@media only screen 
+and (min-width : 320px)
+and (max-device-width : 480px)
+{
+    main {
+        section.articles-section {
+            margin-top: 150px !important;
+
+            article.articles {
+                margin-top: 3rem;
+                .boxes {
+                    display: block !important;
+                }
+            }
+        }
+
+        section.newsletter {
+           margin-top: 5rem;
+           height: 350px;
+           background-size: cover;
+
+           form.form {
+               input {
+                   width: 100%;
+               }
+           }
+        }
+
+        section.products {
+            .products {
+                display: block;
+                margin-top: 4rem;
+            }
+            margin-bottom: 5rem;
+            
+            button {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+    
+    } 
+}
+
+
+/* Tablets (portrait) -------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+{
+    main {
+        section.articles-section {
+            margin-top: 25rem !important;
+
+            article.articles {
+                margin-top: 3rem;
+                .boxes {
+                    display: block !important;
+                }
+            }
+        }
+
+        section.newsletter {
+           margin-top: 5rem;
+           height: 350px;
+           background-size: cover;
+
+           form.form {
+               input {
+                   width: 100%;
+               }
+           }
+        }
+
+        section.products {
+            .products {
+                grid-template-areas: 
+                "box1 box2";
+                margin-top: 4rem;
+            }
+            margin-bottom: 5rem;
+        }
+    } 
+}
+
+
